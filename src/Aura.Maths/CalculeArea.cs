@@ -4,36 +4,36 @@ using System.Text;
 
 namespace Aura.Maths
 {
-    public class CalculeArea
+    public static class CalculeArea
     {
         /// <summary>
         /// This method calcule the object's area
         /// </summary>
-        public double CalculeAreaof2DObject(Poligon Object)
+        public static double CalculeAreaof2DObject(Poligon Object)
         {
             throw new System.NotImplementedException();
         }
 
-        public double CalculeTriangleArea(Triangle Triangule)
+        public static double CalculeTriangleArea(Triangle Triangule)
         {
             double a = (Triangule.Base * Triangule.High) / 2; 
             return a;
         }
 
-        public double CalculeSquareArea(Square Square)
+        public static double CalculeSquareArea(Square Square)
         {
             double a = ((int)Square.Side ^ 2);
             return a;
         }
 
-        public double CalculeRectangleArea(Rectangle rectangle)
+        public static double CalculeRectangleArea(Rectangle rectangle)
         {
-            return 0;
+            return rectangle.Height * rectangle.Width;
         }
 
-        public double CalculeCircleArea(Circle Circle)
+        public static double CalculeCircleArea(Circle Circle)
         {
-            throw new System.NotImplementedException();
+            return Math.PI * ((Circle.Diameter / 2) ^ 2);
         }
     }
 }

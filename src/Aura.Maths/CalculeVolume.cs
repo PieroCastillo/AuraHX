@@ -34,7 +34,7 @@ namespace Aura.Maths
             throw new System.NotImplementedException();
         }
 
-        public double CalculeVolumeCone(_Cone Cone)
+        public double CalculeVolumeCone(Cone Cone)
         {
             throw new System.NotImplementedException();
         }

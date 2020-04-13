@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Aura.Maths
 {
-    public class Circle : Poligon
+    public class Circle : Poligon 
     {
+        public int Diameter { get; set; }
     }
 }

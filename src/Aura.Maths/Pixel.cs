@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace Aura.Maths
 {
-    public class Pixel
+    public class Pixel : IColoreable
     {
         public double X
         {
@@ -22,12 +23,6 @@ namespace Aura.Maths
             }
         }
 
-        public int Color
-        {
-            get => default;
-            set
-            {
-            }
-        }
+        public Color Color { get; set; }
     }
 }

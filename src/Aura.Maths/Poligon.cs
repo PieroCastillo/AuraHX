@@ -11,10 +11,8 @@ namespace Aura.Maths
 
         public Point Ubication
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
         }
     }
 }
