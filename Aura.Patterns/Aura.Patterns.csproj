@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="0.9.7" />
+    <PackageReference Include="libpng-sharp" Version="0.1.18" />
     <PackageReference Include="NGraphics" Version="0.5.0" />
   </ItemGroup>
 
