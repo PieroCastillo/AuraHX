@@ -1,5 +1,6 @@
-﻿using Avalonia;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Aura.Maths
 {
@@ -37,8 +38,8 @@ namespace Aura.Maths
             double y2 = Vector.Point2.Y;
 
             double newx1 = x1 - (x1 * 2);
-            double newx2 = x2 - (x2 * 2);
-            double newy1 = y1 - (y1 * 2);
+            double newx2 = x2 - (x2 * 2); 
+            double newy1 = y1 - (y1 * 2); 
             double newy2 = y2 - (y2 * 2);
 
             Point p1 = new Point();
@@ -49,13 +50,13 @@ namespace Aura.Maths
             Vector vect = new Vector();
             vect.Point1 = p1;
             vect.Point2 = p2;
-
+           
             return vect;
-        }
+        }   
 
         public double CalculateVectorModule(Vector Vector)
         {
-            int u = (int)(Vector.Point1.X - Vector.Point1.Y) ^ 2 + (int)(Vector.Point2.X - Vector.Point2.Y) ^ 2;
+            int u = (int)(Vector.Point1.X - Vector.Point1.Y)^2 + (int)(Vector.Point2.X - Vector.Point2.Y)^2;
             return Math.Sqrt((double)u);
         }
     }
